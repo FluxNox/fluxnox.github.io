@@ -14,33 +14,29 @@
     }
     
     h1 {
-      font-family: 'Courier New', monospace;  
-      font-size: 48px;
-      text-align: center;
-      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: rainbow 5s infinite linear;
-    }
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: rainbow 10s ease infinite;   
+}
 
-    @keyframes rainbow {
-      100%{background-position:60vw}
-    }
+@keyframes rainbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}  
+  100%{background-position:0% 50%}
+}
+
+img {
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  width: 150px;
+}
+
+p {
+  text-align: center;
+  /* other styles */
+}
     
-    img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 50%;
-      width: 200px;
-    }
-
-    p {
-      width: 60%;
-      margin: 0 auto;
-      font-size: 18px;
-      line-height: 1.5; 
-    }
-
     @media (max-width: 600px) {
       p {
         width: 90%;
